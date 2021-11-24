@@ -14,7 +14,7 @@ Metasploit VERSION
   Framework: 5.0.99-dev
   Console  : 5.0.99-dev
  
-TARGET => Windows XP
+TARGET => Windows 7
 
 Cara:
   1. Set up port forwarding dengan Ngrok

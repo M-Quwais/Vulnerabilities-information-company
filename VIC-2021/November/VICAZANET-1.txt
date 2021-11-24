@@ -1,6 +1,6 @@
 Informasi : Keamanan
 STATUS    : TERVERIFIKASI
-LEGIT? Ya
+BEKERJA? Masih
 Tipe      : Meterpreter
 TINGKAT   : SANGAT TINGGI
 
